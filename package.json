@@ -1,0 +1,18 @@
+{
+  "name": "ts-apex-legends-equipment-random",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "start": "webpack serve --mode=development --open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.3.1",
+    "ts-loader": "^8.1.0",
+    "typescript": "^4.2.4",
+    "webpack": "^5.31.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
