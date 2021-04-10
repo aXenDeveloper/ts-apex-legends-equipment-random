@@ -1,2 +1,0 @@
-(()=>{"use strict";console.log("test 12345")})();
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly90cy1hcGV4LWxlZ2VuZHMtZXF1aXBtZW50LXJhbmRvbS8uL3NyYy9pbmRleC50cyJdLCJuYW1lcyI6WyJjb25zb2xlIiwibG9nIl0sIm1hcHBpbmdzIjoibUJBQ0FBLFFBQVFDLElBQUksZSIsImZpbGUiOiJidW5kbGUuanMiLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBzdHJpY3RcIjtcclxuY29uc29sZS5sb2coJ3Rlc3QgMTIzNDUnKTtcclxuIl0sInNvdXJjZVJvb3QiOiIifQ==

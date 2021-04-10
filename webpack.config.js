@@ -12,6 +12,13 @@ module.exports = {
         include: [path.resolve(__dirname, 'src')]
       },
       {
+        test: /\.(png|jpe?g|gif)$/i,
+        loader: 'file-loader',
+        options: {
+          outputPath: 'images'
+        }
+      },
+      {
         test: /\.html$/,
         loader: 'html-loader'
       },
