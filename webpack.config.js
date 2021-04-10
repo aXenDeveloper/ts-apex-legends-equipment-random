@@ -1,5 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const sass = require('sass');
 
 module.exports = {
@@ -12,15 +14,19 @@ module.exports = {
         include: [path.resolve(__dirname, 'src')]
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
-        loader: 'file-loader',
+        test: /\.html$/,
+        loader: 'html-loader',
         options: {
-          outputPath: 'images'
+          sources: false
         }
       },
       {
-        test: /\.html$/,
-        loader: 'html-loader'
+        test: /\.(png|jpe?g|gif)$/i,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'images'
+        }
       },
       {
         test: /\.s[ac]ss$/i,
@@ -42,15 +48,19 @@ module.exports = {
   },
   devtool: 'inline-source-map',
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './public/index.html',
-      favicon: './assets/favicon.ico'
+      template: './src/index.html',
+      favicon: './src/favicon.ico'
+    }),
+    new CopyPlugin({
+      patterns: [{ from: 'src/images', to: 'images' }]
     })
   ],
   devServer: {
     publicPath: '/',
-    contentBase: './public',
+    contentBase: './src',
     hot: true,
     open: true
   },
