@@ -1,3 +1,6 @@
 import '../styles/style.scss';
+import randomNumber from './functions/randomNumber';
 
-console.log('test 123456');
+const random = document.querySelector('.random');
+
+if (random) random.innerHTML = `<div>${randomNumber(1, 10)}</div>`;
