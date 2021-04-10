@@ -4,16 +4,16 @@ const sass = require('sass');
 
 module.exports = {
   entry: './src/index.ts',
-  output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'build')
-  },
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\.ts$/,
         use: 'ts-loader',
-        exclude: /node_modules/
+        include: [path.resolve(__dirname, 'src')]
+      },
+      {
+        test: /\.html$/,
+        loader: 'html-loader'
       },
       {
         test: /\.s[ac]ss$/i,
@@ -30,16 +30,22 @@ module.exports = {
       }
     ]
   },
-  resolve: {
-    extensions: ['.tsx', '.ts', '.js']
-  },
+  devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html'
+      filename: 'index.html',
+      template: './public/index.html',
+      favicon: './assets/favicon.ico'
     })
   ],
-  devtool: 'inline-source-map',
   devServer: {
-    contentBase: './build'
+    publicPath: '/',
+    contentBase: './public',
+    hot: true,
+    open: true
+  },
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'build')
   }
 };

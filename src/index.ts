@@ -1,3 +1,3 @@
-import './styles/style.scss';
+import '../styles/style.scss';
 
-console.log('test');
+console.log('test 123456');
