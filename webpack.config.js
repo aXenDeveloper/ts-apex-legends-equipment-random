@@ -16,6 +16,7 @@ module.exports = {
       {
         test: /\.html$/,
         loader: 'html-loader',
+        include: [path.resolve(__dirname, 'src')],
         options: {
           sources: false
         }
@@ -23,6 +24,7 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif)$/i,
         loader: 'file-loader',
+        include: [path.resolve(__dirname, 'src')],
         options: {
           name: '[name].[ext]',
           outputPath: 'images'
@@ -30,6 +32,7 @@ module.exports = {
       },
       {
         test: /\.s[ac]ss$/i,
+        include: [path.resolve(__dirname, 'src')],
         use: [
           'style-loader',
           'css-loader',
