@@ -1,3 +1,5 @@
+import { weaponsType } from './types/dataTypes';
+
 export const legends = [
   'bangalore',
   'bloodhound',
@@ -30,3 +32,19 @@ export const bodyShields = [
 
 export const helmets = ['helmet_1', 'helmet_2', 'helmet_3', 'helmet_4'];
 export const backpacks = ['backpack_1', 'backpack_2', 'backpack_3', 'backpack_4'];
+
+// In production
+export const weapons: weaponsType = [
+  {
+    name: 'havoc',
+    upgrades: [
+      [
+        'none',
+        'extended_energy_mag_1',
+        'extended_energy_mag_2',
+        'extended_energy_mag_3',
+        'extended_energy_mag_4'
+      ]
+    ]
+  }
+];
