@@ -14,4 +14,4 @@ Application randomizes equipment with improvements and a random character in Ape
 
 | Resources                                                           | Description    |
 | ------------------------------------------------------------------- | -------------- |
-| [Apex Legends Website](https://www.ea.com/pl-pl/games/apex-legends) | Images legends |
+| [Apex Legends Website](https://www.ea.com/games/apex-legends) | Images legends |

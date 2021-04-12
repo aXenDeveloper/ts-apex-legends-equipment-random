@@ -1,0 +1,51 @@
+.settings {
+  &_form {
+    &_left {
+      margin: 0 var(--sp-4) 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      grid-gap: var(--sp-1);
+
+      &_legend {
+        overflow: hidden;
+
+        &:focus-within {
+          outline: #000 auto 1px;
+        }
+
+        img {
+          max-width: 100%;
+          object-fit: cover;
+          transition: transform 0.2s ease-in-out;
+          backface-visibility: hidden;
+        }
+
+        label {
+          cursor: pointer;
+
+          &:hover img {
+            transform: scale(1.2);
+          }
+
+          input {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+
+            &:not(:checked) + img {
+              filter: grayscale(1);
+            }
+          }
+        }
+      }
+    }
+
+    &_right {
+    }
+
+    &_button {
+    }
+  }
+}

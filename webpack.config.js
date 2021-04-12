@@ -63,7 +63,8 @@ module.exports = {
   ],
   devServer: {
     publicPath: '/',
-    contentBase: './src',
+    contentBase: path.join(__dirname, 'src'),
+    watchContentBase: true,
     hot: true,
     open: true
   },
