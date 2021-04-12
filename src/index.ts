@@ -1,11 +1,13 @@
 import './styles/style.scss';
 import { getSettings } from './querySelectors';
 import getRandomItems from './functions/getRandomItems';
-import { bodyShield, legends } from './data';
+import { bodyShields, helmets, legends, backpacks } from './data';
 
 getSettings?.addEventListener('submit', e => {
   e.preventDefault();
 
   console.log(getRandomItems(legends));
-  console.log(getRandomItems(bodyShield));
+  console.log(getRandomItems(bodyShields));
+  console.log(getRandomItems(helmets));
+  console.log(getRandomItems(backpacks));
 });

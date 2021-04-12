@@ -12,6 +12,7 @@ Application randomizes equipment with improvements and a random character in Ape
 
 ## 🗃 Resources
 
-| Resources                                                           | Description    |
-| ------------------------------------------------------------------- | -------------- |
-| [Apex Legends Website](https://www.ea.com/games/apex-legends) | Images legends |
+| Resources                                                | Description    |
+| -------------------------------------------------------- | -------------- |
+| [Apex Legends EA](https://www.ea.com/games/apex-legends) | Images legends |
+| [Apex Legends Wiki](https://apexlegends.fandom.com/)     | Images shelds  |
