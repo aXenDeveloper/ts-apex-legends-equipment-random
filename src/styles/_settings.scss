@@ -1,22 +1,32 @@
 .settings {
   &_form {
-    &_left {
+    &_list {
       margin: 0 var(--sp-4) 0 0;
       padding: 0;
       list-style: none;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-      grid-gap: var(--sp-1);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
 
-      &_legend {
+      &_item {
+        flex: 0 1 15rem;
         overflow: hidden;
+        text-align: center;
+        margin: var(--sp-2);
+        border-radius: var(--sp-2);
 
         &:focus-within {
           outline: #000 auto 1px;
         }
 
+        &\:small {
+          img {
+            height: 13rem;
+          }
+        }
+
         img {
-          max-width: 100%;
+          max-width: 95%;
           object-fit: cover;
           transition: transform 0.2s ease-in-out;
           backface-visibility: hidden;
@@ -26,7 +36,7 @@
           cursor: pointer;
 
           &:hover img {
-            transform: scale(1.2);
+            transform: scale(1.1);
           }
 
           input {
@@ -36,6 +46,7 @@
 
             &:not(:checked) + img {
               filter: grayscale(1);
+              opacity: 0.4;
             }
           }
         }

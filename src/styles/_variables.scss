@@ -11,4 +11,31 @@
   --sp-10: 64px;
   --background-body: #e4e1d8;
   --container-width: 150rem;
+  --color-1: #a8a8a8;
+  --color-2: #51a8d6;
+  --color-3: #b237c8;
+  --color-4: #cead21;
+  --color-5: #ff4e1d;
+}
+
+.backgroundColor {
+  &_1 {
+    background-color: var(--color-1);
+  }
+
+  &_2 {
+    background-color: var(--color-2);
+  }
+
+  &_3 {
+    background-color: var(--color-3);
+  }
+
+  &_4 {
+    background-color: var(--color-4);
+  }
+
+  &_5 {
+    background-color: var(--color-5);
+  }
 }
