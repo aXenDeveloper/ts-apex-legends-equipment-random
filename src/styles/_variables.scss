@@ -12,30 +12,47 @@
   --background-body: #e4e1d8;
   --container-width: 150rem;
   --color-1: #a8a8a8;
+  --color-1-dark: #757575;
   --color-2: #51a8d6;
+  --color-2-dark: #3a7da0;
   --color-3: #b237c8;
+  --color-3-dark: #872598;
   --color-4: #cead21;
+  --color-4-dark: #826d14;
   --color-5: #ff4e1d;
+  --color-5-dark: #8c280c;
+  --color-energy: #d8ec97;
+  --color-energy-dark: #8c9a5e;
+  --color-heavy: #b2ded4;
+  --color-heavy-dark: #5f9085;
 }
 
 .backgroundColor {
   &_1 {
-    background-color: var(--color-1);
+    background-image: linear-gradient(351deg, var(--color-1-dark), var(--color-1));
   }
 
   &_2 {
-    background-color: var(--color-2);
+    background-image: linear-gradient(351deg, var(--color-2-dark), var(--color-2));
   }
 
   &_3 {
-    background-color: var(--color-3);
+    background-image: linear-gradient(351deg, var(--color-3-dark), var(--color-3));
   }
 
   &_4 {
-    background-color: var(--color-4);
+    background-image: linear-gradient(351deg, var(--color-4-dark), var(--color-4));
   }
 
   &_5 {
-    background-color: var(--color-5);
+    background-image: linear-gradient(351deg, var(--color-5-dark), var(--color-5));
+  }
+
+  &_energy {
+    background-image: linear-gradient(351deg, var(--color-energy-dark), var(--color-energy));
+  }
+
+  &_heavy {
+    background-image: linear-gradient(351deg, var(--color-heavy-dark), var(--color-heavy));
   }
 }

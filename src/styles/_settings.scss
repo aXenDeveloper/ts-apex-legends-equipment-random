@@ -2,16 +2,10 @@
   img {
     max-width: 95%;
     object-fit: cover;
-    transition: transform 0.2s ease-in-out;
-    backface-visibility: hidden;
   }
 
   label {
     cursor: pointer;
-
-    &:hover img {
-      transform: scale(1.1);
-    }
 
     input {
       position: absolute;
@@ -38,7 +32,6 @@
 
       &_item {
         flex: 0 1 15rem;
-        overflow: hidden;
         text-align: center;
         margin: var(--sp-2);
         border-radius: var(--sp-2);
@@ -64,7 +57,8 @@
 
       &_item {
         display: flex;
-        overflow: hidden;
+        align-items: center;
+        justify-content: center;
         border-radius: var(--sp-2);
         padding: var(--sp-4);
 
@@ -72,8 +66,12 @@
           margin-bottom: var(--sp-6);
         }
 
+        > div > ul:not(:last-child) {
+          margin-bottom: var(--sp-4);
+        }
+
         > label {
-          margin-right: var(--sp-4);
+          margin-right: var(--sp-6);
         }
 
         label {
@@ -93,8 +91,19 @@
       display: flex;
 
       &_item {
+        text-align: center;
+        border-radius: var(--sp-2);
+
         &:not(:last-child) {
           margin-right: var(--sp-6);
+        }
+
+        label {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: var(--sp-1) var(--sp-2);
+          border-radius: inherit;
         }
 
         img {
