@@ -4,11 +4,32 @@ import randomNumber from './randomNumber';
 
 // In production
 export default (arrayData: weaponsType) => {
-  let enableItems: string[] = [];
+  let enableItems: weaponsType = [];
 
-  arrayData.map((item, index) => {
+  arrayData.map(item => {
     const getCheckedInput = <HTMLInputElement>getSettings?.querySelector(`#${item.name}`);
+
+    if (getCheckedInput.checked) {
+      item.upgrades?.map(upgrade => {
+        upgrade.map(upgradeElement => {
+          const getCheckedInputUpgrades = <HTMLInputElement>(
+            getSettings?.querySelector(`#${item.name}_${upgradeElement}`)
+          );
+
+          console.log(getCheckedInputUpgrades);
+        });
+      });
+
+      enableItems = [
+        ...enableItems,
+        {
+          name: item.name
+        }
+      ];
+    }
   });
 
-  return enableItems[randomNumber(0, enableItems.length - 1)];
+  console.log(enableItems);
+
+  //return enableItems[randomNumber(0, enableItems.length - 1)];
 };

@@ -38,13 +38,33 @@ export const weapons: weaponsType = [
   {
     name: 'havoc',
     upgrades: [
+      ['', '1x_hcog', '1x_holo', '1x-2x_holo', '2x_hcog', '2x-4x_aog', '3x_hcog'],
       [
-        'none',
+        '',
         'extended_energy_mag_1',
         'extended_energy_mag_2',
         'extended_energy_mag_3',
         'extended_energy_mag_4'
-      ]
+      ],
+      ['', 'standard_stock_1', 'standard_stock_2', 'standard_stock_3'],
+      ['', 'barrel_stabilizer_1', 'barrel_stabilizer_2', 'barrel_stabilizer_3'],
+      ['', 'turbocharger']
+    ]
+  },
+  {
+    name: 'flatline',
+    upgrades: [
+      ['', '1x_hcog', '1x_holo', '1x-2x_holo', '2x_hcog', '2x-4x_aog', '3x_hcog'],
+      [
+        '',
+        'extended_heavy_mag_1',
+        'extended_heavy_mag_2',
+        'extended_heavy_mag_3',
+        'extended_heavy_mag_4'
+      ],
+      ['', 'standard_stock_1', 'standard_stock_2', 'standard_stock_3'],
+      ['', 'barrel_stabilizer_1', 'barrel_stabilizer_2', 'barrel_stabilizer_3'],
+      ['', 'anvil-receiver']
     ]
   }
 ];

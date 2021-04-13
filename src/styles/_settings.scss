@@ -1,3 +1,31 @@
+@mixin label-form {
+  img {
+    max-width: 95%;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out;
+    backface-visibility: hidden;
+  }
+
+  label {
+    cursor: pointer;
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+
+    input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+
+      &:not(:checked) + img {
+        filter: grayscale(1);
+        opacity: 0.4;
+      }
+    }
+  }
+}
+
 .settings {
   &_form {
     &_list {
@@ -25,35 +53,55 @@
           }
         }
 
-        img {
-          max-width: 95%;
-          object-fit: cover;
-          transition: transform 0.2s ease-in-out;
-          backface-visibility: hidden;
-        }
-
-        label {
-          cursor: pointer;
-
-          &:hover img {
-            transform: scale(1.1);
-          }
-
-          input {
-            position: absolute;
-            opacity: 0;
-            pointer-events: none;
-
-            &:not(:checked) + img {
-              filter: grayscale(1);
-              opacity: 0.4;
-            }
-          }
-        }
+        @include label-form();
       }
     }
 
-    &_right {
+    &_weapons {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      &_item {
+        display: flex;
+        overflow: hidden;
+        border-radius: var(--sp-2);
+        padding: var(--sp-4);
+
+        &:not(:last-child) {
+          margin-bottom: var(--sp-6);
+        }
+
+        > label {
+          margin-right: var(--sp-4);
+        }
+
+        label {
+          &:focus-within {
+            outline: #000 auto 1px;
+          }
+        }
+
+        @include label-form();
+      }
+    }
+
+    &_upgrades {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+
+      &_item {
+        &:not(:last-child) {
+          margin-right: var(--sp-6);
+        }
+
+        img {
+          width: 2.2rem;
+          height: 2.2rem;
+        }
+      }
     }
 
     &_button {
