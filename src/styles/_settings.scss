@@ -4,19 +4,22 @@
     object-fit: cover;
   }
 
-  label {
-    cursor: pointer;
+  input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
 
-    input {
-      position: absolute;
-      opacity: 0;
-      pointer-events: none;
-
-      &:not(:checked) + img {
-        filter: grayscale(1);
-        opacity: 0.4;
-      }
+    &:not(:checked) + label {
+      // filter: grayscale(1);
+      opacity: 0.4;
     }
+  }
+
+  label {
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    border-radius: inherit;
   }
 }
 
@@ -62,6 +65,10 @@
         border-radius: var(--sp-2);
         padding: var(--sp-4);
 
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+        }
+
         &:not(:last-child) {
           margin-bottom: var(--sp-6);
         }
@@ -72,6 +79,10 @@
 
         > label {
           margin-right: var(--sp-6);
+
+          @media screen and (max-width: 768px) {
+            margin: 0 0 var(--sp-6) 0;
+          }
         }
 
         label {
@@ -89,21 +100,23 @@
       margin: 0;
       list-style: none;
       display: flex;
+      flex-wrap: wrap;
+
+      @media screen and (max-width: 768px) {
+        align-items: center;
+        justify-content: center;
+      }
 
       &_item {
         text-align: center;
         border-radius: var(--sp-2);
-
-        &:not(:last-child) {
-          margin-right: var(--sp-6);
-        }
+        margin: var(--sp-2);
 
         label {
           display: flex;
           align-items: center;
           justify-content: center;
           padding: var(--sp-1) var(--sp-2);
-          border-radius: inherit;
         }
 
         img {

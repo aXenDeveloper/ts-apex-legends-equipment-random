@@ -4,8 +4,8 @@ import { getSettings } from './querySelectors';
 import getRandomItems from './functions/getRandomItems';
 import { bodyShields, helmets, legends, backpacks } from './data/data';
 import getRandomWeapon from './functions/getRandomWeapon';
-import tippy from 'tippy.js';
 import { weapons } from './data/weapons';
+import tooltip from './components/tootlip/tooltip';
 
 getSettings?.addEventListener('submit', e => {
   e.preventDefault();
@@ -18,6 +18,4 @@ getSettings?.addEventListener('submit', e => {
   console.log(getRandomWeapon(weapons));
 });
 
-tippy('#bangalore_tooltip', {
-  content: 'Bangalore'
-});
+tooltip();
