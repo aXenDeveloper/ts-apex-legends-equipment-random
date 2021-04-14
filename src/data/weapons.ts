@@ -1,6 +1,6 @@
-import { weaponsType } from '../types/dataTypes';
+import { dataNameType, weaponsType } from '../types/dataTypes';
 
-export const weapons: weaponsType = [
+export const weaponsData: weaponsType = [
   {
     name: 'havoc',
     upgrades: [
@@ -8,9 +8,9 @@ export const weapons: weaponsType = [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
-        'optic_2x-4x_aog',
+        'optic_2x4x_aog',
         'optic_3x_hcog'
       ],
       [
@@ -32,9 +32,9 @@ export const weapons: weaponsType = [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
-        'optic_2x-4x_aog',
+        'optic_2x4x_aog',
         'optic_3x_hcog'
       ],
       [
@@ -50,15 +50,15 @@ export const weapons: weaponsType = [
     ]
   },
   {
-    name: 'g7-scout',
+    name: 'g7scout',
     upgrades: [
       [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
-        'optic_2x-4x_aog',
+        'optic_2x4x_aog',
         'optic_3x_hcog'
       ],
       [
@@ -79,9 +79,9 @@ export const weapons: weaponsType = [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
-        'optic_2x-4x_aog',
+        'optic_2x4x_aog',
         'optic_3x_hcog'
       ],
       [
@@ -96,15 +96,15 @@ export const weapons: weaponsType = [
     ]
   },
   {
-    name: 'r-301',
+    name: 'r301',
     upgrades: [
       [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
-        'optic_2x-4x_aog',
+        'optic_2x4x_aog',
         'optic_3x_hcog'
       ],
       [
@@ -120,15 +120,15 @@ export const weapons: weaponsType = [
     ]
   },
   {
-    name: '30-30-repeater',
+    name: 'repeater3030',
     upgrades: [
       [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
-        'optic_2x-4x_aog',
+        'optic_2x4x_aog',
         'optic_3x_hcog'
       ],
       [
@@ -148,7 +148,7 @@ export const weapons: weaponsType = [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
         'optic_1x_digital'
       ],
@@ -170,20 +170,20 @@ export const weapons: weaponsType = [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
         'optic_1x_digital'
       ]
     ]
   },
   {
-    name: 'r-99',
+    name: 'r99',
     upgrades: [
       [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
         'optic_1x_digital'
       ],
@@ -205,7 +205,7 @@ export const weapons: weaponsType = [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
         'optic_1x_digital'
       ],
@@ -227,9 +227,9 @@ export const weapons: weaponsType = [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
-        'optic_2x-4x_aog',
+        'optic_2x4x_aog',
         'optic_3x_hcog'
       ],
       [
@@ -251,9 +251,9 @@ export const weapons: weaponsType = [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
-        'optic_2x-4x_aog',
+        'optic_2x4x_aog',
         'optic_3x_hcog'
       ],
       [
@@ -268,15 +268,15 @@ export const weapons: weaponsType = [
     ]
   },
   {
-    name: 'l-star',
+    name: 'lstar',
     upgrades: [
       [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
-        'optic_2x-4x_aog',
+        'optic_2x4x_aog',
         'optic_3x_hcog'
       ],
       [
@@ -289,18 +289,18 @@ export const weapons: weaponsType = [
     ]
   },
   {
-    name: 'charge-rifle',
+    name: 'chargerifle',
     upgrades: [
       [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
-        'optic_2x-4x_aog',
+        'optic_2x4x_aog',
         'optic_3x_hcog',
-        'optic_4x-8x_sniper',
-        'optic_4x-10x_sniper',
+        'optic_4x8x_sniper',
+        'optic_4x10x_sniper',
         'optic_6x_sniper'
       ],
       ['sniper_stock_0', 'sniper_stock_1', 'sniper_stock_2', 'sniper_stock_3']
@@ -313,12 +313,12 @@ export const weapons: weaponsType = [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
-        'optic_2x-4x_aog',
+        'optic_2x4x_aog',
         'optic_3x_hcog',
-        'optic_4x-8x_sniper',
-        'optic_4x-10x_sniper',
+        'optic_4x8x_sniper',
+        'optic_4x10x_sniper',
         'optic_6x_sniper'
       ],
       [
@@ -343,12 +343,12 @@ export const weapons: weaponsType = [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
-        'optic_2x-4x_aog',
+        'optic_2x4x_aog',
         'optic_3x_hcog',
-        'optic_4x-8x_sniper',
-        'optic_4x-10x_sniper',
+        'optic_4x8x_sniper',
+        'optic_4x10x_sniper',
         'optic_6x_sniper'
       ],
       [
@@ -362,18 +362,18 @@ export const weapons: weaponsType = [
     ]
   },
   {
-    name: 'triple-take',
+    name: 'tripletake',
     upgrades: [
       [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
-        'optic_2x-4x_aog',
+        'optic_2x4x_aog',
         'optic_3x_hcog',
-        'optic_4x-8x_sniper',
-        'optic_4x-10x_sniper',
+        'optic_4x8x_sniper',
+        'optic_4x10x_sniper',
         'optic_6x_sniper'
       ],
       [
@@ -387,13 +387,13 @@ export const weapons: weaponsType = [
     ]
   },
   {
-    name: 'eva-8',
+    name: 'eva8',
     upgrades: [
       [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
         'optic_1x_digital'
       ],
@@ -407,7 +407,7 @@ export const weapons: weaponsType = [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
         'optic_1x_digital'
       ],
@@ -421,7 +421,7 @@ export const weapons: weaponsType = [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
         'optic_1x_digital'
       ],
@@ -430,26 +430,26 @@ export const weapons: weaponsType = [
     ]
   },
   {
-    name: 'peacekeepe',
+    name: 'peacekeeper',
     upgrades: [
       [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
         'optic_1x_digital'
       ]
     ]
   },
   {
-    name: 're-45',
+    name: 're45',
     upgrades: [
       [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
         'optic_1x_digital'
       ],
@@ -471,7 +471,7 @@ export const weapons: weaponsType = [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
         'optic_1x_digital'
       ],
@@ -492,7 +492,7 @@ export const weapons: weaponsType = [
         'optic_0',
         'optic_1x_hcog',
         'optic_1x_holo',
-        'optic_1x-2x_holo',
+        'optic_1x2x_holo',
         'optic_2x_hcog',
         'optic_1x_digital'
       ],
@@ -507,3 +507,31 @@ export const weapons: weaponsType = [
     ]
   }
 ];
+
+export const weaponsDataName: dataNameType = {
+  havoc: 'Havoc',
+  flatline: 'Flatline',
+  g7scout: 'G7-Scout',
+  hemlok: 'Hemlok',
+  r301: 'R-301',
+  repeater3030: '30-30 Repeater',
+  alternator: 'Alternator',
+  prowler: 'Prowler',
+  r99: 'R-99',
+  volt: 'Volt',
+  devotion: 'Devotion',
+  spitfire: 'Spitfire',
+  lstar: 'L-star',
+  chargerifle: 'Charge Rifle',
+  longbow: 'Longbow',
+  kraber: 'Kraber',
+  sentinel: 'Sentinel',
+  tripletake: 'Triple Take',
+  eva8: 'EVA-8',
+  mastiff: 'Mastiff',
+  mozambique: 'Mozambique',
+  peacekeeper: 'Peacekeeper',
+  re45: 'RE-45',
+  p2020: 'P2020',
+  wingman: 'Wingman'
+};

@@ -1,6 +1,6 @@
 import { dataNameType } from '../types/dataTypes';
 
-export const bodyShields = [
+export const bodyShieldsData = [
   'body_shield_1',
   'body_shield_2',
   'body_shield_3',
@@ -10,7 +10,7 @@ export const bodyShields = [
   'evo_shield_3',
   'evo_shield_5'
 ];
-export const bodyShieldsName: dataNameType = {
+export const bodyShieldsDataName: dataNameType = {
   body_shield_1: 'Body Shield lvl 1',
   body_shield_2: 'Body Shield lvl 2',
   body_shield_3: 'Body Shield lvl 3',
@@ -21,16 +21,16 @@ export const bodyShieldsName: dataNameType = {
   evo_shield_5: 'Evo Shield lvl 5'
 };
 
-export const helmets = ['helmet_1', 'helmet_2', 'helmet_3', 'helmet_4'];
-export const helmetsName: dataNameType = {
+export const helmetsData = ['helmet_1', 'helmet_2', 'helmet_3', 'helmet_4'];
+export const helmetsDataName: dataNameType = {
   helmet_1: 'Helmet lvl 1',
   helmet_2: 'Helmet lvl 2',
   helmet_3: 'Helmet lvl 3',
   helmet_4: 'Helmet lvl 4'
 };
 
-export const backpacks = ['backpack_1', 'backpack_2', 'backpack_3', 'backpack_4'];
-export const backpacksName: dataNameType = {
+export const backpacksData = ['backpack_1', 'backpack_2', 'backpack_3', 'backpack_4'];
+export const backpacksDataName: dataNameType = {
   backpack_1: 'Backpack lvl 1',
   backpack_2: 'Backpack lvl 2',
   backpack_3: 'Backpack lvl 3',

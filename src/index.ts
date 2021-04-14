@@ -2,21 +2,21 @@ import './styles/style.scss';
 import 'tippy.js/dist/tippy.css';
 import { getSettings } from './querySelectors';
 import getRandomItems from './functions/getRandomItems';
-import { bodyShields, helmets, backpacks } from './data/data';
+import { bodyShieldsData, helmetsData, backpacksData } from './data/data';
 import getRandomWeapon from './functions/getRandomWeapon';
-import { weapons } from './data/weapons';
-import tooltip from './components/tooltip';
-import { legends } from './data/legends';
+import { weaponsData } from './data/weapons';
+import tooltip from './components/tooltip/tooltip';
+import { legendsData } from './data/legends';
 
 getSettings?.addEventListener('submit', e => {
   e.preventDefault();
 
-  console.log(getRandomItems(legends));
-  console.log(getRandomItems(bodyShields));
-  console.log(getRandomItems(helmets));
-  console.log(getRandomItems(backpacks));
+  console.log(getRandomItems(legendsData));
+  console.log(getRandomItems(bodyShieldsData));
+  console.log(getRandomItems(helmetsData));
+  console.log(getRandomItems(backpacksData));
 
-  console.log(getRandomWeapon(weapons));
+  console.log(getRandomWeapon(weaponsData));
 });
 
 tooltip();
