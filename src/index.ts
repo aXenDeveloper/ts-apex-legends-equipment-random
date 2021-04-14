@@ -5,7 +5,7 @@ import getRandomItems from './functions/getRandomItems';
 import { bodyShields, helmets, backpacks } from './data/data';
 import getRandomWeapon from './functions/getRandomWeapon';
 import { weapons } from './data/weapons';
-import tooltip from './components/tootlip/tooltip';
+import tooltip from './components/tooltip';
 import { legends } from './data/legends';
 
 getSettings?.addEventListener('submit', e => {

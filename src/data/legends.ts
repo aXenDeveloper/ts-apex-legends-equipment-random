@@ -1,4 +1,4 @@
-import { legendsNameType } from './../types/dataTypes';
+import { dataNameType } from './../types/dataTypes';
 
 export const legends = [
   'bangalore',
@@ -19,7 +19,7 @@ export const legends = [
   'wraith'
 ];
 
-export const legendsName: legendsNameType = {
+export const legendsName: dataNameType = {
   bangalore: 'Bangalore',
   bloodhound: 'Bloodhound',
   caustic: 'Caustic',

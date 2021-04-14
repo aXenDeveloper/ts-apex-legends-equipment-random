@@ -3,6 +3,6 @@ export type weaponsType = {
   upgrades?: string[][];
 }[];
 
-export type legendsNameType = {
+export type dataNameType = {
   [key: string]: string;
 };
