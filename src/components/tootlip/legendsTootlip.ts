@@ -1,11 +1,10 @@
 import tippy from 'tippy.js';
+import { legends, legendsName } from '../../data/legends';
 
 export default () => {
-  tippy('#bangalore_tooltip', {
-    content: 'Bangalore'
-  });
-
-  tippy('.hopup_turbocharger', {
-    content: 'Turbocharger'
+  legends.map(legend => {
+    tippy(`#${legend}_tooltip`, {
+      content: legendsName[legend]
+    });
   });
 };
