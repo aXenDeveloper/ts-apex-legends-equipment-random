@@ -62,10 +62,6 @@
       grid-gap: var(--sp-6);
 
       &_item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
         border-radius: var(--sp-2);
         padding: var(--sp-4);
 
@@ -81,13 +77,13 @@
           margin-bottom: var(--sp-4);
         }
 
-        > label {
+        /* > label {
           margin-right: var(--sp-6);
 
           @media screen and (max-width: 768px) {
             margin: 0 0 var(--sp-6) 0;
           }
-        }
+        } */
 
         label {
           &:focus-within {

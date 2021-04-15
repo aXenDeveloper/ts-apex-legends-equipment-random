@@ -25,6 +25,8 @@
   --color-energy-dark: #8c9a5e;
   --color-heavy: #b2ded4;
   --color-heavy-dark: #5f9085;
+  --color-light: #ffe0b2;
+  --color-light-dark: #a08154;
 }
 
 .backgroundColor {
@@ -34,5 +36,9 @@
 
   &_heavy {
     background-image: linear-gradient(351deg, var(--color-heavy-dark), var(--color-heavy));
+  }
+
+  &_light {
+    background-image: linear-gradient(351deg, var(--color-light-dark), var(--color-light));
   }
 }

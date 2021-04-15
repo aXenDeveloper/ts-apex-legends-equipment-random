@@ -48,7 +48,7 @@ export const weaponsData: weaponsType = [
       ['barrel_stabilizer_0', 'barrel_stabilizer_1', 'barrel_stabilizer_2', 'barrel_stabilizer_3'],
       ['hopup_0', 'hopup_anvilreceiver']
     ]
-  } /*
+  },
   {
     name: 'g7scout',
     upgrades: [
@@ -71,7 +71,7 @@ export const weaponsData: weaponsType = [
       ['standard_stock_0', 'standard_stock_1', 'standard_stock_2', 'standard_stock_3'],
       ['barrel_stabilizer_0', 'barrel_stabilizer_1', 'barrel_stabilizer_2', 'barrel_stabilizer_3']
     ]
-  },
+  } /*
   {
     name: 'hemlok',
     upgrades: [
@@ -510,9 +510,9 @@ export const weaponsData: weaponsType = [
 
 export const weaponsDataName: dataNameType = {
   havoc: 'Havoc',
-  flatline: 'Flatline'
-  /* g7scout: 'G7-Scout',
-  hemlok: 'Hemlok',
+  flatline: 'Flatline',
+  g7scout: 'G7-Scout'
+  /* hemlok: 'Hemlok',
   r301: 'R-301',
   repeater3030: '30-30 Repeater',
   alternator: 'Alternator',

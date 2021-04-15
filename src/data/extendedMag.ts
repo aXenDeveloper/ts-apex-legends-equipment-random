@@ -31,3 +31,19 @@ export const extendedMagHeavyName: dataNameType = {
   extended_heavy_mag_3: 'Extended Heavy Mag lvl 3',
   extended_heavy_mag_4: 'Extended Heavy Mag lvl 4'
 };
+
+// Light
+export const extendedMagLight = [
+  'extended_light_mag_0',
+  'extended_light_mag_1',
+  'extended_light_mag_2',
+  'extended_light_mag_3',
+  'extended_light_mag_4'
+];
+export const extendedMagLightName: dataNameType = {
+  extended_light_mag_0: 'Extended Light Mag N/A',
+  extended_light_mag_1: 'Extended Light Mag lvl 1',
+  extended_light_mag_2: 'Extended Light Mag lvl 2',
+  extended_light_mag_3: 'Extended Light Mag lvl 3',
+  extended_light_mag_4: 'Extended Light Mag lvl 4'
+};
