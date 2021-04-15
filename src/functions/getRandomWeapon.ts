@@ -6,30 +6,38 @@ import randomNumber from './randomNumber';
 export default (arrayData: weaponsType) => {
   let enableItems: weaponsType = [];
 
-  arrayData.map(item => {
-    const getCheckedInput = <HTMLInputElement>document.querySelector(`#${item.name}`);
+  arrayData.map(weapon => {
+    const getCheckedInput = <HTMLInputElement>document.querySelector(`#${weapon.name}`);
 
     if (getCheckedInput.checked) {
       enableItems = [
         ...enableItems,
         {
-          name: item.name
+          name: weapon.name,
+          upgrades: []
         }
       ];
 
-      item.upgrades?.map(upgrade => {
-        upgrade.map(upgradeElement => {
+      weapon.upgrades?.map((upgradesWeapon: string[], index: number) => {
+        const arrayUpgrades = enableItems[enableItems.length - 1].upgrades;
+
+        // Create array for upgrades category
+        arrayUpgrades?.push([]);
+
+        upgradesWeapon.map(upgradeElement => {
           const getCheckedInputUpgrades = <HTMLInputElement>(
-            getSettings?.querySelector(`#${item.name}_${upgradeElement}`)
+            getSettings?.querySelector(`#${weapon.name}_${upgradeElement}`)
           );
 
-          console.log(getCheckedInputUpgrades.checked);
+          if (getCheckedInputUpgrades.checked && arrayUpgrades) {
+            arrayUpgrades[index] = [...arrayUpgrades[index], upgradeElement];
+          }
         });
       });
     }
   });
 
-  // console.log(enableItems);
+  console.log(enableItems);
 
   enableItems[randomNumber(0, enableItems.length - 1)];
 };
