@@ -25,3 +25,19 @@ export const standardStockName: dataNameType = {
   standard_stock_2: 'Standard Stock lvl 2',
   standard_stock_3: 'Standard Stock lvl 3'
 };
+
+export const sniperStock = ['sniper_stock_0', 'sniper_stock_1', 'sniper_stock_2', 'sniper_stock_3'];
+export const sniperStockName: dataNameType = {
+  sniper_stock_0: 'Sniper Stock N/A',
+  sniper_stock_1: 'Sniper Stock lvl 1',
+  sniper_stock_2: 'Sniper Stock lvl 2',
+  sniper_stock_3: 'Sniper Stock lvl 3'
+};
+
+export const shotgunBolt = ['shotgun_bolt_0', 'shotgun_bolt_1', 'shotgun_bolt_2', 'shotgun_bolt_3'];
+export const shotgunBoltName: dataNameType = {
+  shotgun_bolt_0: 'Shotgun Bolt N/A',
+  shotgun_bolt_1: 'Shotgun Bolt lvl 1',
+  shotgun_bolt_2: 'Shotgun Bolt lvl 2',
+  shotgun_bolt_3: 'Shotgun Bolt lvl 3'
+};

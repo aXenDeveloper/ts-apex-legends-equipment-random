@@ -27,6 +27,12 @@
   --color-heavy-dark: #5f9085;
   --color-light: #ffe0b2;
   --color-light-dark: #a08154;
+  --color-heirloom: #ffb2cd;
+  --color-heirloom-dark: #794040;
+  --color-sniper: #b2b3ff;
+  --color-sniper-dark: #5d5ea7;
+  --color-shotgun: #ffb2b2;
+  --color-shotgun-dark: #8e5353;
 }
 
 .backgroundColor {
@@ -40,5 +46,17 @@
 
   &_light {
     background-image: linear-gradient(351deg, var(--color-light-dark), var(--color-light));
+  }
+
+  &_heirloom {
+    background-image: linear-gradient(351deg, var(--color-heirloom-dark), var(--color-heirloom));
+  }
+
+  &_sniper {
+    background-image: linear-gradient(351deg, var(--color-sniper-dark), var(--color-sniper));
+  }
+
+  &_shotgun {
+    background-image: linear-gradient(351deg, var(--color-shotgun-dark), var(--color-shotgun));
   }
 }

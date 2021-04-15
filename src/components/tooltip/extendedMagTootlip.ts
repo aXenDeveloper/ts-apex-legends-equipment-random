@@ -5,7 +5,9 @@ import {
   extendedMagHeavy,
   extendedMagHeavyName,
   extendedMagLight,
-  extendedMagLightName
+  extendedMagLightName,
+  extendedMagSniper,
+  extendedMagSniperName
 } from '../../data/extendedMag';
 
 export default () => {
@@ -27,6 +29,13 @@ export default () => {
   extendedMagLight.map(extendedMag => {
     tippy(`.${extendedMag}`, {
       content: extendedMagLightName[extendedMag]
+    });
+  });
+
+  // Sniper
+  extendedMagSniper.map(extendedMag => {
+    tippy(`.${extendedMag}`, {
+      content: extendedMagSniperName[extendedMag]
     });
   });
 };

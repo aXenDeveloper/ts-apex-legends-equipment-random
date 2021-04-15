@@ -15,7 +15,14 @@
 .extended_heavy_mag_0,
 .extended_heavy_mag_1,
 .extended_light_mag_0,
-.extended_light_mag_1 {
+.extended_light_mag_1,
+.sniper_stock_0,
+.sniper_stock_1,
+.extended_sniper_mag_0,
+.extended_sniper_mag_1,
+.shotgun_bolt_0,
+.shotgun_bolt_1,
+.hopup_0 {
   background-image: linear-gradient(351deg, var(--color-1-dark), var(--color-1));
 }
 
@@ -30,7 +37,11 @@
 .helmet_2,
 .backpack_2,
 .extended_heavy_mag_2,
-.extended_light_mag_2 {
+.extended_light_mag_2,
+.optic_6x_sniper,
+.sniper_stock_2,
+.extended_sniper_mag_2,
+.shotgun_bolt_2 {
   background-image: linear-gradient(351deg, var(--color-2-dark), var(--color-2));
 }
 
@@ -45,12 +56,17 @@
 .helmet_3,
 .backpack_3,
 .extended_heavy_mag_3,
-.extended_light_mag_3 {
+.extended_light_mag_3,
+.optic_4x8x_sniper,
+.sniper_stock_3,
+.extended_sniper_mag_3,
+.shotgun_bolt_3,
+.hopup_hammerpoint,
+.hopup_quickdraw {
   background-image: linear-gradient(351deg, var(--color-3-dark), var(--color-3));
 }
 
 // 4
-.hopup_0,
 .hopup_turbocharger,
 .extended_energy_mag_4,
 .body_shield_4,
@@ -58,7 +74,11 @@
 .backpack_4,
 .extended_heavy_mag_4,
 .hopup_anvilreceiver,
-.extended_light_mag_4 {
+.extended_light_mag_4,
+.optic_1x_digital,
+.optic_4x10x_sniper,
+.hopup_skullpiercer,
+.extended_sniper_mag_4 {
   background-image: linear-gradient(351deg, var(--color-4-dark), var(--color-4));
 }
 

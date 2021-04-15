@@ -47,3 +47,19 @@ export const extendedMagLightName: dataNameType = {
   extended_light_mag_3: 'Extended Light Mag lvl 3',
   extended_light_mag_4: 'Extended Light Mag lvl 4'
 };
+
+// Sniper
+export const extendedMagSniper = [
+  'extended_sniper_mag_0',
+  'extended_sniper_mag_1',
+  'extended_sniper_mag_2',
+  'extended_sniper_mag_3',
+  'extended_sniper_mag_4'
+];
+export const extendedMagSniperName: dataNameType = {
+  extended_sniper_mag_0: 'Extended Sniper Mag N/A',
+  extended_sniper_mag_1: 'Extended Sniper Mag lvl 1',
+  extended_sniper_mag_2: 'Extended Sniper Mag lvl 2',
+  extended_sniper_mag_3: 'Extended Sniper Mag lvl 3',
+  extended_sniper_mag_4: 'Extended Sniper Mag lvl 4'
+};

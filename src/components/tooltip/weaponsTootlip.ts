@@ -3,6 +3,10 @@ import { weaponsData, weaponsDataName } from '../../data/weapons';
 import {
   barrelStabilizer,
   barrelStabilizerName,
+  shotgunBolt,
+  shotgunBoltName,
+  sniperStock,
+  sniperStockName,
   standardStock,
   standardStockName
 } from '../../data/upgrades';
@@ -34,6 +38,20 @@ export default () => {
   standardStock.map(stock => {
     tippy(`.${stock}`, {
       content: standardStockName[stock]
+    });
+  });
+
+  // Sniper Stock
+  sniperStock.map(stock => {
+    tippy(`.${stock}`, {
+      content: sniperStockName[stock]
+    });
+  });
+
+  // Shotgun Bolt
+  shotgunBolt.map(bolt => {
+    tippy(`.${bolt}`, {
+      content: shotgunBoltName[bolt]
     });
   });
 };
