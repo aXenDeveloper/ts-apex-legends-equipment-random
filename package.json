@@ -1,5 +1,5 @@
 {
-  "name": "ts-apex-legends-equipment-random",
+  "name": "ts-apex-legends-random-equipment",
   "version": "1.0.0",
   "main": "./src/index.ts",
   "scripts": {

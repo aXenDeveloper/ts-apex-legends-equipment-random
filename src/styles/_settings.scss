@@ -57,11 +57,15 @@
       padding: 0;
       margin: 0;
       list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(237px, 1fr));
+      grid-gap: var(--sp-6);
 
       &_item {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         border-radius: var(--sp-2);
         padding: var(--sp-4);
 
@@ -69,9 +73,9 @@
           flex-direction: column;
         }
 
-        &:not(:last-child) {
+        /*&:not(:last-child) {
           margin-bottom: var(--sp-6);
-        }
+        } */
 
         > div > ul:not(:last-child) {
           margin-bottom: var(--sp-4);
@@ -101,11 +105,7 @@
       list-style: none;
       display: flex;
       flex-wrap: wrap;
-
-      @media screen and (max-width: 768px) {
-        align-items: center;
-        justify-content: center;
-      }
+      justify-content: center;
 
       &_item {
         text-align: center;

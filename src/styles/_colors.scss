@@ -11,7 +11,9 @@
 .body_shield_1,
 .evo_shield_1,
 .helmet_1,
-.backpack_1 {
+.backpack_1,
+.extended_heavy_mag_0,
+.extended_heavy_mag_1 {
   background-image: linear-gradient(351deg, var(--color-1-dark), var(--color-1));
 }
 
@@ -24,7 +26,8 @@
 .body_shield_2,
 .evo_shield_2,
 .helmet_2,
-.backpack_2 {
+.backpack_2,
+.extended_heavy_mag_2 {
   background-image: linear-gradient(351deg, var(--color-2-dark), var(--color-2));
 }
 
@@ -37,7 +40,8 @@
 .body_shield_3,
 .evo_shield_3,
 .helmet_3,
-.backpack_3 {
+.backpack_3,
+.extended_heavy_mag_3 {
   background-image: linear-gradient(351deg, var(--color-3-dark), var(--color-3));
 }
 
@@ -47,7 +51,9 @@
 .extended_energy_mag_4,
 .body_shield_4,
 .helmet_4,
-.backpack_4 {
+.backpack_4,
+.extended_heavy_mag_4,
+.hopup_anvilreceiver {
   background-image: linear-gradient(351deg, var(--color-4-dark), var(--color-4));
 }
 

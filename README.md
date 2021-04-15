@@ -1,4 +1,4 @@
-# (TypeScript) Apex Legends - Equipment Random
+# (TypeScript) Apex Legends - Random Equipment
 
 Application randomizes equipment with improvements and a random character in Apex Legends game.
 
