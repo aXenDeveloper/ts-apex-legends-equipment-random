@@ -17,6 +17,7 @@ getSettings?.addEventListener('submit', e => {
   console.log(getRandomItems(backpacksData));
 
   console.log(getRandomWeapon(weaponsData));
+  console.log(getRandomWeapon(weaponsData));
 });
 
 tooltip();
