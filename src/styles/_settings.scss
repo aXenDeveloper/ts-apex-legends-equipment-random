@@ -36,7 +36,7 @@
       flex: 0 1 15rem;
       text-align: center;
       margin: var(--sp-2);
-      border-radius: var(--sp-2);
+      border-radius: var(--sp-1);
 
       &:focus-within {
         outline: #000 auto 1px;
@@ -104,7 +104,7 @@
 
     &_item {
       text-align: center;
-      border-radius: var(--sp-2);
+      border-radius: var(--sp-1);
       margin: var(--sp-2);
 
       label {

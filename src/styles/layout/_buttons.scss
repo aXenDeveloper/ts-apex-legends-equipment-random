@@ -1,0 +1,18 @@
+.button {
+  display: inline-block;
+  padding: var(--sp-5) var(--sp-8);
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  border-radius: var(--sp-1);
+  line-height: 1;
+  position: relative;
+
+  &_github {
+    background-color: var(--button-github);
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: var(--button-github-hover);
+    }
+  }
+}
