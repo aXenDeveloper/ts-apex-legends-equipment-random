@@ -11,9 +11,9 @@ html {
 @import './variables';
 
 body {
-  background: var(--background-body) url('../images/background.jpg') no-repeat center top / cover;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji,
     Segoe UI Emoji;
+  background-color: var(--background-body);
   font-size: 1.6rem;
   line-height: 1.5;
   margin: 0;
@@ -23,6 +23,10 @@ body {
   max-width: var(--container-width);
   padding: 0 1.5rem;
   margin: 0 auto;
+}
+
+.main {
+  background: url('../images/background.jpg') no-repeat center top / contain;
 }
 
 a {
@@ -38,7 +42,8 @@ h4 {
 
 h2 {
   font-size: 3rem;
-  margin: 2rem 0;
+  padding: 2rem 0;
+  margin: 0;
 }
 
 h3 {
@@ -53,4 +58,6 @@ h4 {
 
 @import './settings';
 @import './colors';
-@import './footer';
+@import './layout/footer';
+@import './layout/header';
+@import './layout/button';
