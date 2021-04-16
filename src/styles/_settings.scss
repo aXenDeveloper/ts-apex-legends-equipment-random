@@ -120,4 +120,13 @@
       }
     }
   }
+
+  &_buttons {
+    margin-top: var(--sp-4);
+    padding: var(--sp-4) 0;
+    background-color: var(--background-body);
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+  }
 }

@@ -1,18 +1,30 @@
 .button {
   display: inline-block;
+  font-family: inherit;
   padding: var(--sp-5) var(--sp-8);
   font-weight: 500;
   transition: background-color 0.2s ease;
   border-radius: var(--sp-1);
   line-height: 1;
-  position: relative;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: inherit;
 
   &_github {
     background-color: var(--button-github);
-    text-transform: uppercase;
 
     &:hover {
       background-color: var(--button-github-hover);
+    }
+  }
+
+  &_submit {
+    background-color: var(--button-submit);
+
+    &:hover {
+      background-color: var(--button-submit-hover);
     }
   }
 }
