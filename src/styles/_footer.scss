@@ -1,0 +1,38 @@
+.footer {
+  background-color: var(--background-foooter);
+  color: var(--color-foooter);
+  margin-top: var(--sp-8);
+  padding: var(--sp-8) 0;
+
+  > .container {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 543px) {
+      flex-direction: column;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  &_created {
+    text-align: left;
+  }
+
+  &_copyright {
+    text-align: right;
+  }
+
+  &_created,
+  &_copyright {
+    @media screen and (max-width: 570px) {
+      text-align: center;
+    }
+
+    a {
+      font-weight: 600;
+    }
+  }
+}

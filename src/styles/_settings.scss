@@ -24,105 +24,100 @@
 }
 
 .settings {
-  &_form {
-    &_list {
-      margin: 0 var(--sp-4) 0 0;
-      padding: 0;
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+  &_list {
+    margin: 0 var(--sp-4) 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-      &_item {
-        flex: 0 1 15rem;
-        text-align: center;
-        margin: var(--sp-2);
-        border-radius: var(--sp-2);
+    &_item {
+      flex: 0 1 15rem;
+      text-align: center;
+      margin: var(--sp-2);
+      border-radius: var(--sp-2);
 
+      &:focus-within {
+        outline: #000 auto 1px;
+      }
+
+      &\:small {
+        img {
+          height: 13rem;
+        }
+      }
+
+      @include label-form();
+    }
+  }
+
+  &_weapons {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    grid-gap: var(--sp-6);
+
+    &_item {
+      border-radius: var(--sp-2);
+      padding: var(--sp-4);
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+
+      /*&:not(:last-child) {
+        margin-bottom: var(--sp-6);
+      } */
+
+      > div > ul:not(:last-child) {
+        margin-bottom: var(--sp-4);
+      }
+
+      /* > label {
+        margin-right: var(--sp-6);
+
+        @media screen and (max-width: 768px) {
+          margin: 0 0 var(--sp-6) 0;
+        }
+      } */
+
+      label {
         &:focus-within {
           outline: #000 auto 1px;
         }
-
-        &\:small {
-          img {
-            height: 13rem;
-          }
-        }
-
-        @include label-form();
       }
+
+      @include label-form();
     }
+  }
 
-    &_weapons {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-      grid-gap: var(--sp-6);
+  &_upgrades {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-      &_item {
-        border-radius: var(--sp-2);
-        padding: var(--sp-4);
+    &_item {
+      text-align: center;
+      border-radius: var(--sp-2);
+      margin: var(--sp-2);
 
-        @media screen and (max-width: 768px) {
-          flex-direction: column;
-        }
-
-        /*&:not(:last-child) {
-          margin-bottom: var(--sp-6);
-        } */
-
-        > div > ul:not(:last-child) {
-          margin-bottom: var(--sp-4);
-        }
-
-        /* > label {
-          margin-right: var(--sp-6);
-
-          @media screen and (max-width: 768px) {
-            margin: 0 0 var(--sp-6) 0;
-          }
-        } */
-
-        label {
-          &:focus-within {
-            outline: #000 auto 1px;
-          }
-        }
-
-        @include label-form();
+      label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: var(--sp-1) var(--sp-2);
       }
-    }
 
-    &_upgrades {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-
-      &_item {
-        text-align: center;
-        border-radius: var(--sp-2);
-        margin: var(--sp-2);
-
-        label {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: var(--sp-1) var(--sp-2);
-        }
-
-        img {
-          width: 2.2rem;
-          height: 2.2rem;
-        }
+      img {
+        width: 2.2rem;
+        height: 2.2rem;
       }
-    }
-
-    &_button {
     }
   }
 }
