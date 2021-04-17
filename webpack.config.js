@@ -4,6 +4,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const sass = require('sass');
 
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 module.exports = {
   entry: './src/index.ts',
   module: {
@@ -31,18 +33,9 @@ module.exports = {
         }
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.scss$/i,
         include: [path.resolve(__dirname, 'src')],
-        use: [
-          'style-loader',
-          'css-loader',
-          {
-            loader: 'sass-loader',
-            options: {
-              implementation: sass
-            }
-          }
-        ]
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       },
       {
         test: /\.css$/i,
@@ -63,6 +56,9 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [{ from: 'src/images', to: 'images' }]
+    }),
+    new MiniCssExtractPlugin({
+      filename: '[name].[contenthash].css'
     })
   ],
   devServer: {
