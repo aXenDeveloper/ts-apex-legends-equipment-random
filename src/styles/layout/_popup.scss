@@ -1,0 +1,42 @@
+.popup {
+  &_background {
+    position: fixed;
+    top: 0;
+    z-index: 5000;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  &_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5100;
+    padding-bottom: 15px;
+
+    > div {
+      background-color: #fff;
+      width: 90%;
+      max-width: 1200px;
+      margin: 3% auto 0 auto;
+      border-radius: var(--sp-1);
+    }
+
+    &_header {
+      display: flex;
+      padding: var(--sp-4);
+
+      > h3 {
+        margin: 0;
+      }
+    }
+
+    &_content {
+      padding: var(--sp-4);
+    }
+  }
+}

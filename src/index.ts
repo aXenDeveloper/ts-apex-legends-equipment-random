@@ -7,10 +7,10 @@ import getRandomWeapon from './functions/getRandomWeapon';
 import { weaponsData } from './data/weapons';
 import tooltip from './components/tooltip/tooltip';
 import { legendsData } from './data/legends';
+import popup from './components/popup';
 
 getSettings?.addEventListener('submit', e => {
   e.preventDefault();
-
   console.log(getRandomItems(legendsData));
   console.log(getRandomItems(bodyShieldsData));
   console.log(getRandomItems(helmetsData));
@@ -18,6 +18,8 @@ getSettings?.addEventListener('submit', e => {
 
   console.log(getRandomWeapon(weaponsData));
   console.log(getRandomWeapon(weaponsData));
+
+  popup('popup', 'popup');
 });
 
 tooltip();
