@@ -1,32 +1,92 @@
 .result {
   display: flex;
 
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   &_legend {
+    flex: 0 0 30rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     > img {
       width: 30rem;
       object-fit: cover;
       height: 33.5rem;
     }
-  }
 
-  &_equipment {
     &_other {
       padding: 0;
-      margin: 0;
+      margin: var(--sp-6) 0 0 0;
       list-style: none;
-      display: flex;
-      flex-wrap: wrap;
+
+      @media screen and (max-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
 
       > li {
-        flex: 0 1 15rem;
+        width: 15rem;
         padding: var(--sp-2);
         margin: var(--sp-2);
         text-align: center;
-        border-radius: var(--sp-1);
+        border-radius: var(--sp-2);
 
         > img {
           max-width: 100%;
           object-fit: cover;
+        }
+      }
+    }
+  }
+
+  &_equipment {
+    flex: 1;
+    padding: 0;
+    margin: var(--sp-2) 0 0 0;
+    list-style: none;
+
+    &_item {
+      border-radius: var(--sp-2);
+      padding: var(--sp-4);
+      margin-top: var(--sp-6);
+
+      &_img {
+        margin-right: var(--sp-4);
+        text-align: center;
+
+        > img {
+          max-width: 100%;
+        }
+      }
+
+      &_upgrades {
+        padding: 0;
+        margin: var(--sp-6) 0 0 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        > li {
+          text-align: center;
+          border-radius: var(--sp-1);
+          margin: var(--sp-2);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: var(--sp-1) var(--sp-2);
+
+          img {
+            width: 2.2rem;
+            height: 2.2rem;
+            object-fit: cover;
+          }
         }
       }
     }

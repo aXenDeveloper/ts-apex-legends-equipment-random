@@ -20,6 +20,16 @@ export const bodyShieldsDataName: dataNameType = {
   evo_shield_3: 'Evo Shield lvl 3',
   evo_shield_5: 'Evo Shield lvl 5'
 };
+export const convertToImgShields: dataNameType = {
+  body_shield_1: 'body',
+  body_shield_2: 'body',
+  body_shield_3: 'body',
+  body_shield_4: 'body',
+  evo_shield_1: 'evo',
+  evo_shield_2: 'evo',
+  evo_shield_3: 'evo',
+  evo_shield_5: 'evo'
+};
 
 export const helmetsData = ['helmet_1', 'helmet_2', 'helmet_3', 'helmet_4'];
 export const helmetsDataName: dataNameType = {
@@ -35,4 +45,10 @@ export const backpacksDataName: dataNameType = {
   backpack_2: 'Backpack lvl 2',
   backpack_3: 'Backpack lvl 3',
   backpack_4: 'Backpack lvl 4'
+};
+export const convertToImgBackpacks: dataNameType = {
+  backpack_1: 'backpack_1',
+  backpack_2: 'backpack_2',
+  backpack_3: 'backpack_3',
+  backpack_4: 'backpack_3'
 };
