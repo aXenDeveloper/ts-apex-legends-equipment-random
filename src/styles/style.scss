@@ -57,8 +57,9 @@ h4 {
 }
 
 @import './animation';
-@import './settings';
 @import './colors';
+@import './form/settings';
+@import './form/result';
 @import './layout/footer';
 @import './layout/header';
 @import './layout/buttons';

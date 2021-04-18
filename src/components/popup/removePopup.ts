@@ -1,6 +1,8 @@
 const removePopup = (querySelectorPopup: Element | null) => {
   const removeWithAnimation = () => {
-    const querySelectorPopupHTML = querySelectorPopup as HTMLElement;
+    const querySelectorPopupHTMLBackground = querySelectorPopup?.querySelector(
+      '.popup_background'
+    ) as HTMLElement;
     const querySelectorPopupHTMLDiv = querySelectorPopup?.querySelector(
       '.popup_box > div'
     ) as HTMLElement;
@@ -8,7 +10,8 @@ const removePopup = (querySelectorPopup: Element | null) => {
     querySelectorPopupHTMLDiv.classList.remove('animation_fadeInDown');
     querySelectorPopupHTMLDiv.classList.add('animation_fadeOutDown');
 
-    if (querySelectorPopupHTML) querySelectorPopupHTML.classList.add('animation_fadeOut');
+    querySelectorPopupHTMLBackground.classList.remove('animation_fadeIn');
+    querySelectorPopupHTMLBackground.classList.add('animation_fadeOut');
 
     setInterval(() => {
       querySelectorPopup?.remove();

@@ -19,7 +19,7 @@ const popup = (title: string, text: string) => {
   popupSection.innerHTML = schemaPopup;
 
   const popupBackground = document.createElement('div');
-  popupBackground.className = 'popup_background';
+  popupBackground.className = 'popup_background animation_fadeIn';
 
   // Push to HTML
   document.body.appendChild(popupSection);
