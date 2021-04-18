@@ -1,0 +1,57 @@
+.animation {
+  &_fadeInDown {
+    animation: fadeInDown 0.3s linear;
+  }
+
+  &_fadeOutDown {
+    animation: fadeOutDown 0.3s linear;
+  }
+
+  &_fadeIn {
+    animation: fadeIn 0.3s linear;
+  }
+
+  &_fadeOut {
+    animation: fadeOut 0.3s linear;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-2.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(2.5rem);
+  }
+}

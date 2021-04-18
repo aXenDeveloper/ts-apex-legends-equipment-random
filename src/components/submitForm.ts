@@ -5,7 +5,7 @@ import { legendsData } from '../data/legends';
 import getRandomItems from '../functions/getRandomItems';
 import { getSettings } from '../index';
 import getRandomWeapon from '../functions/getRandomWeapon';
-import popup from './popup';
+import popup from './popup/popup';
 
 const submitForm = () => {
   getSettings?.addEventListener('submit', e => {
