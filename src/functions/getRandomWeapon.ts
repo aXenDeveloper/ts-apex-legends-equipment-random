@@ -1,8 +1,8 @@
-import { getSettings } from '../querySelectors';
+import { getSettings } from '../index';
 import { weaponsType } from '../types/dataTypes';
 import randomNumber from './randomNumber';
 
-export default (arrayData: weaponsType) => {
+const getRandomWeapon = (arrayData: weaponsType) => {
   let enableItems: weaponsType = [];
 
   arrayData.map(weapon => {
@@ -51,3 +51,5 @@ export default (arrayData: weaponsType) => {
     upgrades: randomUpgrades
   };
 };
+
+export default getRandomWeapon;

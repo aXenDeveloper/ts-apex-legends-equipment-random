@@ -12,7 +12,7 @@ import extendedMagTootlip from './extendedMagTootlip';
 import hopupTooltip from './hopupTooltip';
 import weaponsTootlip from './weaponsTootlip';
 
-export default () => {
+const tooltip = () => {
   // Legends
   legendsData.map(legend => {
     tippy(`#${legend}_tooltip`, {
@@ -46,3 +46,5 @@ export default () => {
   hopupTooltip();
   weaponsTootlip();
 };
+
+export default tooltip;

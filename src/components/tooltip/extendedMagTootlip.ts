@@ -10,7 +10,7 @@ import {
   extendedMagSniperName
 } from '../../data/extendedMag';
 
-export default () => {
+const extendedMagTootlip = () => {
   // Energy
   extendedMagEnergy.map(extendedMag => {
     tippy(`.${extendedMag}`, {
@@ -39,3 +39,5 @@ export default () => {
     });
   });
 };
+
+export default extendedMagTootlip;

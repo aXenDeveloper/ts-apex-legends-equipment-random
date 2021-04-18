@@ -28,10 +28,25 @@
 
     &_header {
       display: flex;
-      padding: var(--sp-4);
+      justify-content: space-between;
 
       > h3 {
         margin: 0;
+        padding: var(--sp-4);
+      }
+
+      &_close {
+        width: 7rem;
+        height: 7rem;
+        font-size: 3rem;
+        font-weight: 600;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+
+        &:hover {
+          color: var(--color-5-dark);
+        }
       }
     }
 

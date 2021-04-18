@@ -12,7 +12,7 @@ import {
 } from '../../data/upgrades';
 import { opticsData, opticsDataName } from '../../data/optics';
 
-export default () => {
+const weaponsTootlip = () => {
   // Weapons
   weaponsData.map(weapon => {
     tippy(`#${weapon.name}_tooltip`, {
@@ -55,3 +55,5 @@ export default () => {
     });
   });
 };
+
+export default weaponsTootlip;

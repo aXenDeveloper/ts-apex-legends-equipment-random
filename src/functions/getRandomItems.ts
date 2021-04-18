@@ -1,7 +1,7 @@
-import { getSettings } from '../querySelectors';
+import { getSettings } from '../index';
 import randomNumber from './randomNumber';
 
-export default (arrayData: string[]) => {
+const getRandomItems = (arrayData: string[]) => {
   let enableItems: string[] = [];
 
   arrayData.map((item, index) => {
@@ -11,3 +11,5 @@ export default (arrayData: string[]) => {
 
   return enableItems[randomNumber(0, enableItems.length - 1)];
 };
+
+export default getRandomItems;
