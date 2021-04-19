@@ -535,3 +535,31 @@ export const weaponsDataName: dataNameType = {
   p2020: 'P2020',
   wingman: 'Wingman'
 };
+
+export const weaponsDataCategory: dataNameType = {
+  havoc: 'energy',
+  flatline: 'heavy',
+  g7scout: 'light',
+  hemlok: 'heavy',
+  r301: 'light',
+  repeater3030: 'heavy',
+  alternator: 'light',
+  prowler: 'heirloom',
+  r99: 'light',
+  volt: 'energy',
+  devotion: 'energy',
+  spitfire: 'heavy',
+  lstar: 'energy',
+  chargerifle: 'sniper',
+  longbow: 'sniper',
+  kraber: 'heirloom',
+  sentinel: 'sniper',
+  tripletake: 'sniper',
+  eva8: 'shotgun',
+  mastiff: 'shotgun',
+  mozambique: 'shotgun',
+  peacekeeper: 'heirloom',
+  re45: 'light',
+  p2020: 'light',
+  wingman: 'heavy'
+};

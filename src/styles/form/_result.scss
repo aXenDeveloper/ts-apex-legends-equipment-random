@@ -3,7 +3,6 @@
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    align-items: center;
   }
 
   &_legend {
@@ -55,6 +54,11 @@
       border-radius: var(--sp-2);
       padding: var(--sp-4);
       margin-top: var(--sp-6);
+
+      > h4 {
+        font-size: 2.5rem;
+        margin: 0 0 2rem 0;
+      }
 
       &_img {
         margin-right: var(--sp-4);

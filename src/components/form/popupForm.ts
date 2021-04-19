@@ -1,5 +1,5 @@
 import { convertToImgUpgrades } from './../../data/upgrades';
-import { weaponsDataName } from './../../data/weapons';
+import { weaponsDataName, weaponsDataCategory } from './../../data/weapons';
 import {
   backpacksDataName,
   convertToImgShields,
@@ -59,7 +59,9 @@ const popupForm = (randomElements: randomElementsType) => {
 
 
       <ul class='result_equipment'>
-          <li class='result_equipment_item backgroundColor_energy'>
+          <li class='result_equipment_item backgroundColor_${
+            weaponsDataCategory[randomElements.weapon1.name]
+          }'>
             <h4>${weaponsDataName[randomElements.weapon1.name]}</h4>
 
             <div class='result_equipment_item_img'>
@@ -75,7 +77,9 @@ const popupForm = (randomElements: randomElementsType) => {
             }
           </li>
 
-          <li class='result_equipment_item backgroundColor_energy'>
+          <li class='result_equipment_item backgroundColor_${
+            weaponsDataCategory[randomElements.weapon2.name]
+          }'>
             <h4>${weaponsDataName[randomElements.weapon2.name]}</h4>
 
             <div class='result_equipment_item_img'>
