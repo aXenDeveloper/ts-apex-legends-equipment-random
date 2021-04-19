@@ -1,8 +1,10 @@
 import removePopup from './removePopup';
 
-const popup = (title: string, text: string) => {
+const popup = (title: string, text: string, error?: boolean) => {
+  const isError = error ? ' popup_error' : '';
+
   const schemaPopup = `
-  <div class="popup_box" style="top: ${document.documentElement.scrollTop}px;">
+  <div class="popup_box${isError}" style="top: ${document.documentElement.scrollTop}px;">
     <div class="animation_fadeInDown">
       <header class="popup_box_header">
         <h3>${title}</h3>
@@ -15,7 +17,9 @@ const popup = (title: string, text: string) => {
   `;
 
   const popupSection = document.createElement('section');
-  popupSection.className = 'popup';
+
+  popupSection.classList.add('popup');
+
   popupSection.innerHTML = schemaPopup;
 
   const popupBackground = document.createElement('div');

@@ -54,4 +54,8 @@
       padding: var(--sp-4);
     }
   }
+
+  &_error > div {
+    max-width: 500px;
+  }
 }

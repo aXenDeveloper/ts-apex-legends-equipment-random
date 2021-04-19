@@ -47,7 +47,7 @@ const getRandomWeapon = (arrayData: weaponsType) => {
   });
 
   return {
-    name: randomWeapon.name,
+    name: randomWeapon?.name,
     upgrades: randomUpgrades
   };
 };
