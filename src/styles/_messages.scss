@@ -1,0 +1,15 @@
+.message {
+    margin: var(--sp-6) 0;
+    padding: var(--sp-4);
+    color: var(--message-color);
+    border-radius: var(--sp-2);
+    text-align: center;
+
+    > span {
+        font-weight: 700;
+    }
+
+    &_info {
+        background-image: var(--message-info);
+    }
+}
