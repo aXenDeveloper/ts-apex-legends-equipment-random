@@ -1,4 +1,6 @@
 @mixin label-form {
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
   img {
     max-width: 95%;
     object-fit: cover;
@@ -21,6 +23,11 @@
     border-radius: inherit;
     padding: var(--sp-2) 0;
   }
+
+  &:hover {
+    box-shadow: var(--box-shadow);
+    border-color: rgb(var(--box-shadow-color));
+  }
 }
 
 .settings {
@@ -37,6 +44,7 @@
       text-align: center;
       margin: var(--sp-2);
       border-radius: var(--sp-2);
+      border: 1px solid transparent;
 
       &:focus-within {
         outline: #000 auto 1px;
@@ -63,26 +71,15 @@
     &_item {
       border-radius: var(--sp-2);
       padding: var(--sp-4);
+      border: 1px solid rgb(0, 0, 0, 0.45);
 
       @media screen and (max-width: 768px) {
         flex-direction: column;
       }
 
-      /*&:not(:last-child) {
-        margin-bottom: var(--sp-6);
-      } */
-
       > div > ul:not(:last-child) {
         margin-bottom: var(--sp-4);
       }
-
-      /* > label {
-        margin-right: var(--sp-6);
-
-        @media screen and (max-width: 768px) {
-          margin: 0 0 var(--sp-6) 0;
-        }
-      } */
 
       label {
         &:focus-within {
@@ -122,7 +119,7 @@
   }
 
   &_buttons {
-    margin-top: var(--sp-4);
+    margin: var(--sp-4) -1rem 0 -1rem;
     padding: var(--sp-4) 0;
     background-color: var(--background-body);
     text-align: center;
