@@ -93,7 +93,8 @@ export const convertToImgUpgrades: dataNameType = {
   hopup_0: 'none',
   hopup_turbocharger: 'turbocharger',
   hopup_anvilreceiver: 'anvilreceiver',
-  hopup_skullpiercer: 'skullpiercer',
   hopup_hammerpoint: 'hammerpoint',
-  hopup_quickdraw: 'quickdraw'
+  hopup_quickdraw: 'quickdraw',
+  hopup_tempo: 'tempo',
+  hopup_shatter_caps: 'shatter_caps'
 };

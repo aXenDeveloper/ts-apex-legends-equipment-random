@@ -5,6 +5,8 @@ import randomNumber from './randomNumber';
 const getRandomWeapon = (arrayData: weaponsType) => {
   let enableItems: weaponsType = [];
 
+  console.log(arrayData)
+
   arrayData.map(weapon => {
     const getCheckedInput = <HTMLInputElement>document.querySelector(`#${weapon.name}`);
 
@@ -27,6 +29,10 @@ const getRandomWeapon = (arrayData: weaponsType) => {
           const getCheckedInputUpgrades = <HTMLInputElement>(
             getSettings?.querySelector(`#${weapon.name}_${upgradeElement}`)
           );
+
+          // Debug
+          // console.log(`#${weapon.name}_${upgradeElement}`);
+          // console.log(getCheckedInputUpgrades);
 
           if (getCheckedInputUpgrades.checked && arrayUpgrades) {
             arrayUpgrades[index] = [...arrayUpgrades[index], upgradeElement];

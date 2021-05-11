@@ -138,7 +138,8 @@ export const weaponsData: weaponsType = [
         'extended_heavy_mag_3',
         'extended_heavy_mag_4'
       ],
-      ['standard_stock_0', 'standard_stock_1', 'standard_stock_2', 'standard_stock_3']
+      ['standard_stock_0', 'standard_stock_1', 'standard_stock_2', 'standard_stock_3'],
+      ['hopup_0', 'hopup_shatter_caps']
     ]
   },
   {
@@ -329,8 +330,7 @@ export const weaponsData: weaponsType = [
         'extended_sniper_mag_4'
       ],
       ['sniper_stock_0', 'sniper_stock_1', 'sniper_stock_2', 'sniper_stock_3'],
-      ['barrel_stabilizer_0', 'barrel_stabilizer_1', 'barrel_stabilizer_2', 'barrel_stabilizer_3'],
-      ['hopup_0', 'hopup_skullpiercer']
+      ['barrel_stabilizer_0', 'barrel_stabilizer_1', 'barrel_stabilizer_2', 'barrel_stabilizer_3']
     ]
   },
   {
@@ -358,7 +358,8 @@ export const weaponsData: weaponsType = [
         'extended_sniper_mag_3',
         'extended_sniper_mag_4'
       ],
-      ['sniper_stock_0', 'sniper_stock_1', 'sniper_stock_2', 'sniper_stock_3']
+      ['sniper_stock_0', 'sniper_stock_1', 'sniper_stock_2', 'sniper_stock_3'],
+      ['hopup_0', 'hopup_tempo']
     ]
   },
   {
@@ -375,15 +376,7 @@ export const weaponsData: weaponsType = [
         'optic_4x8x_sniper',
         'optic_4x10x_sniper',
         'optic_6x_sniper'
-      ],
-      [
-        'extended_sniper_mag_0',
-        'extended_sniper_mag_1',
-        'extended_sniper_mag_2',
-        'extended_sniper_mag_3',
-        'extended_sniper_mag_4'
-      ],
-      ['sniper_stock_0', 'sniper_stock_1', 'sniper_stock_2', 'sniper_stock_3']
+      ]
     ]
   },
   {
@@ -439,7 +432,8 @@ export const weaponsData: weaponsType = [
         'optic_1x2x_holo',
         'optic_2x_hcog',
         'optic_1x_digital'
-      ]
+      ],
+      ['shotgun_bolt_0', 'shotgun_bolt_1', 'shotgun_bolt_2', 'shotgun_bolt_3']
     ]
   },
   {
@@ -503,7 +497,7 @@ export const weaponsData: weaponsType = [
         'extended_heavy_mag_3',
         'extended_heavy_mag_4'
       ],
-      ['hopup_0', 'hopup_skullpiercer', 'hopup_quickdraw']
+      ['hopup_0', 'hopup_quickdraw']
     ]
   }
 ];
