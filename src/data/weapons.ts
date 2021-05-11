@@ -499,6 +499,21 @@ export const weaponsData: weaponsType = [
       ],
       ['hopup_0', 'hopup_quickdraw']
     ]
+  },
+  {
+    name: 'bocek',
+    upgrades: [
+      [
+        'optic_0',
+        'optic_1x_hcog',
+        'optic_1x_holo',
+        'optic_1x2x_holo',
+        'optic_2x_hcog',
+        'optic_3x_hcog'
+      ],
+      ['hopup_0', 'hopup_tempo'],
+      ['hopup_0', 'hopup_shatter_caps'],
+    ]
   }
 ];
 
@@ -527,7 +542,8 @@ export const weaponsDataName: dataNameType = {
   peacekeeper: 'Peacekeeper',
   re45: 'RE-45',
   p2020: 'P2020',
-  wingman: 'Wingman'
+  wingman: 'Wingman',
+  bocek: 'Bocek'
 };
 
 export const weaponsDataCategory: dataNameType = {
@@ -555,5 +571,6 @@ export const weaponsDataCategory: dataNameType = {
   peacekeeper: 'heirloom',
   re45: 'light',
   p2020: 'light',
-  wingman: 'heavy'
+  wingman: 'heavy',
+  bocek: 'arrow'
 };
