@@ -15,6 +15,7 @@ export const legendsData = [
   'pathfinder',
   'rampart',
   'revenant',
+  'valkyrie',
   'wattson',
   'wraith'
 ];
@@ -34,6 +35,7 @@ export const legendsDataName: dataNameType = {
   pathfinder: 'Pathfinder',
   rampart: 'Rampart',
   revenant: 'Revenant',
+  valkyrie: 'Valkyrie',
   wattson: 'Wattson',
   wraith: 'Wraith'
 };
