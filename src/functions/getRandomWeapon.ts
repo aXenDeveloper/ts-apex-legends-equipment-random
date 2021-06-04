@@ -5,8 +5,6 @@ import randomNumber from './randomNumber';
 const getRandomWeapon = (arrayData: weaponsType) => {
   let enableItems: weaponsType = [];
 
-  console.log(arrayData)
-
   arrayData.map(weapon => {
     const getCheckedInput = <HTMLInputElement>document.querySelector(`#${weapon.name}`);
 
